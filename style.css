@@ -4,7 +4,7 @@ body {
     text-align: center;
     font-family: "Josefin Sans", sans-serif;
     color: #FFE4E4;
-    background-color: #FFE4E4;
+    background-color: #848CCF;
 }
 
 /* Navbar section */
@@ -33,4 +33,37 @@ body {
 
 .fa-brands {
     padding-top: 10px;
+}
+
+/* Body section */
+.task{
+    font-size: 40px;
+    margin-top: 60px;
+}
+
+input{
+    margin-top: 2px;
+    width: 230px;
+    height: 50px;
+    border-radius: 12px;
+    border: 0;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    font-size: 26px;
+}
+
+button{
+    padding: 8px 30px;
+    margin-top: 0px;
+    font-size: 28px;
+    border-radius: 12px;
+    border: 0;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #BE5683;
+    color: #FFE4E4;
+}
+
+p{
+    font-size: 28px;
+    margin-top: 24px;
 }

@@ -12,18 +12,24 @@ result = getNumberToGuess(min, max);
 function guessTheNumber() {
     let playerInputNumber = document.getElementById("number-input").value;
     document.getElementById("user-message").innerHTML = playerInputNumber;
+    let message = document.getElementById("user-message")
 
     // Define a message for the player
     if (playerInputNumber >= 1 && playerInputNumber <= 100) {
         if (playerInputNumber == result) {
-            document.getElementById("user-message").innerHTML = 'You win!';
+            message.textContent = 'You win!';
+            message.style.color = '#87c97c';
+            message.style.fontSize = '100px';
+            document.getElementById("number-input").setAttribute("disabled", "true");
+            return;
+
         } else if (playerInputNumber < result) {
-            document.getElementById("user-message").innerHTML = 'The number is greater';
+            message.textContent = 'The number is greater';
         } else {
-            document.getElementById("user-message").innerHTML = 'The number is less';
+            message.textContent = 'The number is less';
         }
     } else {
-        document.getElementById("user-message").innerHTML = 'The number must be between 1 and 100';
+        message.textContent = 'The number must be between 1 and 100';
     }
 }
 

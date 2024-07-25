@@ -14,15 +14,18 @@ function guessTheNumber() {
     document.getElementById("user-message").innerHTML = playerInputNumber;
 
     // Define a message for the player
-    if (playerInputNumber == result) {
-        document.getElementById("user-message").innerHTML = 'You win!';
-    } else if (playerInputNumber < result) {
-        document.getElementById("user-message").innerHTML = 'The number is greater';
+    if (playerInputNumber >= 1 && playerInputNumber <= 100) {
+        if (playerInputNumber == result) {
+            document.getElementById("user-message").innerHTML = 'You win!';
+        } else if (playerInputNumber < result) {
+            document.getElementById("user-message").innerHTML = 'The number is greater';
+        } else {
+            document.getElementById("user-message").innerHTML = 'The number is less';
+        }
     } else {
-        document.getElementById("user-message").innerHTML = 'The number is less';
+        document.getElementById("user-message").innerHTML = 'The number must be between 1 and 100';
     }
 }
-
 
 
 
